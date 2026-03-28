@@ -4,8 +4,12 @@ public class Ejercicio016 {
 	
 	//COMPLETAR METODO
 	public boolean esPar(int n) {
-		return false;
-    }
+		if (n % 2 == 0) {
+	        return true; 
+	    } else {
+	        return false;
+	    }
+	}
 
     public static void main(String[] args) {
     	Ejercicio016 ejercicio016 = new Ejercicio016();

@@ -4,7 +4,12 @@ public class Ejercicio011 {
 	
 	//COMPLETAR METODO
 	public void mostrarTabla(int numero) {
+        System.out.println("Tabla del " +numero);
         
+        for (int i = 1; i <= 10; i++) {
+        	int resultado = numero * i;
+        	System.out.println(numero + " x " +i+ " = " + resultado);
+        }
     }
 
     public static void main(String[] args) {

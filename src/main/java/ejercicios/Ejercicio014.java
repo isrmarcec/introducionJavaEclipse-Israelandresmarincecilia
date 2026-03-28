@@ -3,9 +3,20 @@ package ejercicios;
 public class Ejercicio014 {
 	//COMPLETAR METODO
 	public long calcularFactorial(int n) {
-        return 0;
-    }
+        if (n < 0) {
+        	throw new IllegalArgumentException("El número no debe ser negativo");
+        } 
+        if (n == 0 || n == 1) {
+            return 1;
+        }
 
+        long resultado = 1;
+        for (int i = 2; i <= n; i++) {
+            resultado *= i; 
+        }
+        return resultado;
+    } 
+	
     public static void main(String[] args) {
     	Ejercicio014 ejercicio014 = new Ejercicio014();
         java.util.Scanner scanner = new java.util.Scanner(System.in);

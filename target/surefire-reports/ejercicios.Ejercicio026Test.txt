@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: ejercicios.Ejercicio026Test
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in ejercicios.Ejercicio026Test
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in ejercicios.Ejercicio026Test
+ejercicios.Ejercicio026Test.testGestorUsuariosVariosNombres -- Time elapsed: 0.001 s <<< ERROR!
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at ejercicios.Ejercicio026.gestorUsuarios(Ejercicio026.java:20)
+	at ejercicios.Ejercicio026Test.testGestorUsuariosVariosNombres(Ejercicio026Test.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+ejercicios.Ejercicio026Test.testGestorUsuariosSoloFin -- Time elapsed: 0.002 s <<< ERROR!
+java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1660)
+	at ejercicios.Ejercicio026.gestorUsuarios(Ejercicio026.java:20)
+	at ejercicios.Ejercicio026Test.testGestorUsuariosSoloFin(Ejercicio026Test.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

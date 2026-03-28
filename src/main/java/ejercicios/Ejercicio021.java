@@ -4,9 +4,16 @@ public class Ejercicio021 {
 	
 	//COMPLETAR METODO
 	public int contarVocales(String texto) {
-        return 0;
-    }
-
+	    int contador = 0;
+	    String minusculas = texto.toLowerCase();
+	    for (int i = 0; i < minusculas.length(); i++) {
+	        char letra = minusculas.charAt(i);
+	        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+	            contador++;
+	        }
+	    }
+	    return contador;
+	}
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         Ejercicio021 ejercicio = new Ejercicio021();

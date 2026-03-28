@@ -6,8 +6,21 @@ public class Ejercicio012 {
 	
 	//COMPLETAR METODO
 	public int sumarHastaCero() {
-		return 0;
-    }
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		int suma = 0;
+		int numero;
+		
+		System.out.println("Introduce numeros para sumar (introduce 0 para terminar la suma):");
+		
+		do {
+			System.out.print("Introduce un número: ");
+			numero = scanner.nextInt();
+			suma += numero;
+			
+		} while (numero != 0);
+		
+		return suma;
+				}
 	
 
     public static void main(String[] args) {
